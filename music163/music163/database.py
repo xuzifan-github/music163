@@ -10,5 +10,5 @@ MYSQL_PORT = 50036
 
 connection = pymysql.connect(host=MYSQL_HOST, user=MYSQL_USER,
                              password=MYSQL_PASS, db=MYSQL_DB,
-                             charset='utf8mb4',
+                             port=MYSQL_PORT, charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
